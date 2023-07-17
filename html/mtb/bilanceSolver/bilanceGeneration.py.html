@@ -1,0 +1,19 @@
+<html><body><h1>mtb/bilanceSolver\bilanceGeneration.py</h1>Killed 39 out of 41 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 38</h3><pre>--- mtb/bilanceSolver\bilanceGeneration.py
++++ mtb/bilanceSolver\bilanceGeneration.py
+@@ -39,5 +39,5 @@
+ 
+ 
+ def checkOdd(x):
+-    if x % 2 == 0: raise ValueError(f'{x} is even')
++    if x / 2 == 0: raise ValueError(f'{x} is even')
+ 
+</pre><h3>Mutant 39</h3><pre>--- mtb/bilanceSolver\bilanceGeneration.py
++++ mtb/bilanceSolver\bilanceGeneration.py
+@@ -39,5 +39,5 @@
+ 
+ 
+ def checkOdd(x):
+-    if x % 2 == 0: raise ValueError(f'{x} is even')
++    if x % 3 == 0: raise ValueError(f'{x} is even')
+ 
+</pre></body></html>

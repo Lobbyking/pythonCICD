@@ -1,0 +1,11 @@
+test/core/test_stringModifier.py::test_reverseStringHypothesis:
+
+  - during reuse phase (0.01 seconds):
+    - Typical runtimes: ~ 0-1 ms, of which < 1ms in data generation
+    - 2 passing examples, 0 failing examples, 0 invalid examples
+
+  - during generate phase (0.19 seconds):
+    - Typical runtimes: ~ 0-2 ms, of which ~ 0-1 ms in data generation
+    - 98 passing examples, 0 failing examples, 2 invalid examples
+
+  - Stopped because settings.max_examples=100

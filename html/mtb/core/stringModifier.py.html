@@ -1,0 +1,19 @@
+<html><body><h1>mtb/core\stringModifier.py</h1>Killed 6 out of 8 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 65</h3><pre>--- mtb/core\stringModifier.py
++++ mtb/core\stringModifier.py
+@@ -10,5 +10,5 @@
+         return result
+ 
+     def otherReverseString(self, x):
+-        return x[::-1]
++        return x[::+1]
+ 
+</pre><h3>Mutant 66</h3><pre>--- mtb/core\stringModifier.py
++++ mtb/core\stringModifier.py
+@@ -10,5 +10,5 @@
+         return result
+ 
+     def otherReverseString(self, x):
+-        return x[::-1]
++        return x[::-2]
+ 
+</pre></body></html>

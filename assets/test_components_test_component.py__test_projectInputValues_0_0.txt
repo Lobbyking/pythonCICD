@@ -1,0 +1,11 @@
+test/components/test_component.py::test_projectInputValues:
+
+  - during reuse phase (0.01 seconds):
+    - Typical runtimes: ~ 8ms, of which ~ 7ms in data generation
+    - 1 passing examples, 0 failing examples, 0 invalid examples
+
+  - during generate phase (0.25 seconds):
+    - Typical runtimes: ~ 0-1 ms, of which < 1ms in data generation
+    - 99 passing examples, 0 failing examples, 52 invalid examples
+
+  - Stopped because settings.max_examples=100
