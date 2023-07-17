@@ -50,3 +50,7 @@ def test_projectInputValues(projects):
     assert len(projects.manager) <= 4
     assert str.isalpha(projects.manager) == True
     assert projects.creationDate >= datetime.date(2000, 1, 1)
+
+
+def test_multiply():
+    assert comp.multiply(10, 10) == 100
