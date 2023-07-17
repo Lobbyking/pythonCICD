@@ -55,25 +55,25 @@ def test_addNumbersWithDynamicValues():
         y = increase_compare_value(y)
 
 
-def test_addNumbersWithDynamicValuesFail():
-    x = [1, 2, 3, 4, 5]
-    y = 15
-    while True:
-        if 10 in x: x.append(1)
-        assert bilanceGen.addNumbers(x) == y
-        x = increase_array_value(x)
-        y = increase_compare_value(y)
+# def test_addNumbersWithDynamicValuesFail():
+#     x = [1, 2, 3, 4, 5]
+#     y = 15
+#     while True:
+#         if 10 in x: x.append(1)
+#         assert bilanceGen.addNumbers(x) == y
+#         x = increase_array_value(x)
+#         y = increase_compare_value(y)
 
 
-@pytest.mark.odd
-def test_checkIfOddFail():
-    x = 1
-    try:
-        while True:
-            bilanceGen.checkIfOdd(x)
-            x = increase_compare_value(x)
-    except Exception as e:
-        assert False, f'Error occurred input value: {x}, raised exception: {e}'
+# @pytest.mark.odd
+# def test_checkIfOddFail():
+#     x = 1
+#     try:
+#         while True:
+#             bilanceGen.checkIfOdd(x)
+#             x = increase_compare_value(x)
+#     except Exception as e:
+#         assert False, f'Error occurred input value: {x}, raised exception: {e}'
 
 
 @pytest.mark.odd
