@@ -5,7 +5,7 @@ jobs:
     docker:
       - image: circleci/python:3.10-node-browsers-legacy
 
-    working_directory: ~/pythonCICD
+    working_directory: ~/repo
 
     steps:
       # Step 1: obtain repo from GitHub
@@ -22,4 +22,4 @@ jobs:
           name: run tests
           command: |
             . venv/bin/activate
-            pytest -v --cov=calculator
+            pytest -v --cov
