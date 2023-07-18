@@ -77,9 +77,18 @@ def test_addNumbersWithDynamicValues():
 
 
 @pytest.mark.odd
-@given(st.integers(-500, 500).filter(lambda x: x != 0).filter(lambda x: x % 2 != 0))
+@given(st.integers(-500, 500).filter(lambda x: x != 0).filter(lambda x: x % 2 == 1))
 def test_checkIfOddPass(x):
     try:
-        assert bilanceGen.checkIfOdd(x) == True
+        result = bilanceGen.checkIfOdd(x)
+        print(result)
+        assert result is True
     except Exception as e:
         assert False, f'Error occurred input value: {x}, raised exception: {e}'
+
+
+@pytest.mark.odd
+@given(st.integers(-500, 500).filter(lambda x: x != 0).filter(lambda x: x % 2 == 0))
+def test_checkIfOddWithEvenNumbers(x):
+    with pytest.raises(ValueError, match=f'^{x} is even$'):
+        bilanceGen.checkIfOdd(x)
